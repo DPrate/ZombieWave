@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 {
     public Weapon[] Weapons;
     public Weapon StartingWeapon;
+    public Weapon DefaultWeapon;
     private Weapon currentWeapon;
 
     public string MecanimShoot = "Shoot";
@@ -14,6 +15,8 @@ public class Player : MonoBehaviour
     public LayerMask Hittables;
     private Transform cachedTransform;
     private Animator cachedAnimator;
+
+    private IEnumerator EquipDurationCoroutine = null;
 
     private void Start()
     {
@@ -89,6 +92,15 @@ public class Player : MonoBehaviour
         weaponToEquip.WeaponMesh.enabled = true;
         cachedAnimator.SetLayerWeight(weaponToEquip.MecanimLayer, 1.0f);
         currentWeapon = weaponToEquip;
+
+        if(currentWeapon != DefaultWeapon)
+        {
+            if(EquipDurationCoroutine != null)
+                StopCoroutine(EquipDurationCoroutine);
+
+            EquipDurationCoroutine = RunEquipDuration(currentWeapon.EquipDuration);
+            StartCoroutine(EquipDurationCoroutine);
+        }
     }
 
     private Weapon GetCorrectWeapon(WeaponType inWeaponType)
@@ -100,6 +112,20 @@ public class Player : MonoBehaviour
         }
 
         return null;
+    }
+
+    private IEnumerator RunEquipDuration(float duration)
+    {
+        float timer = duration;
+
+        while(timer > 0)
+        {
+            timer -= Time.deltaTime;
+            yield return null;
+        }
+
+        EquipDurationCoroutine = null;
+        EquipWeapon(DefaultWeapon);
     }
 }
 

@@ -124,6 +124,7 @@ MonoBehaviour:
   WeaponMesh: {fileID: 23191733385657086}
   MecanimLayer: 5
   MuzzleFlashPool: MuzzleFlash
+  EquipDuration: 10
   Damage: 75
   CooldownDuration: 1.5
   ShootingPoint: {fileID: 4079211385120124}

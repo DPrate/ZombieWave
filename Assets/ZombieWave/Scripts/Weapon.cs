@@ -20,6 +20,7 @@ public class Weapon : MonoBehaviour
 
     public string MuzzleFlashPool = "MuzzleFlash";
 
+    public float EquipDuration = 5.0f;
     public float Damage = 10.0f;
     public float CooldownDuration = 1.0f;
 
