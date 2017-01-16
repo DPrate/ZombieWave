@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 400000}
+  - component: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: Smoke
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.009099007, y: -0.005894959, z: -0.026853085}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbd0ec1ffab674475957addad40180b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particlePrefabs:
+  - {fileID: 100000, guid: 11742a42c4be64c178298caf63e6a67a, type: 2}
+  - {fileID: 100000, guid: 659a3f5c68958433d8f6492c11a00a49, type: 2}
+  - {fileID: 100000, guid: 379b485bafe5e4229995b7bab1dce0f7, type: 2}
+  - {fileID: 100000, guid: 3165f889878e948af8cf04d47f216dce, type: 2}
+  - {fileID: 100000, guid: f656d7dbafe5b41759b6fd3e03ea34c9, type: 2}
+  - {fileID: 100002, guid: f2cb05713eac440ca80c9c904c411f98, type: 2}
+  - {fileID: 100002, guid: 7c7cb9d1f94ac421785aeec01fe64888, type: 2}
+  - {fileID: 100000, guid: cba0417a6e90a4e59be20ecd8caba858, type: 2}
+  - {fileID: 100000, guid: bf85fb9bcd387489d8377fcc4dfc7252, type: 2}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1

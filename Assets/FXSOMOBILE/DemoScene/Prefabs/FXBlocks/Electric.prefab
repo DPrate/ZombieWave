@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 400000}
+  - component: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: Electric
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.009099007, y: -0.005894959, z: -0.026853085}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbd0ec1ffab674475957addad40180b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particlePrefabs:
+  - {fileID: 100002, guid: f58a4e39f74cf4bbf9ff45a1277d3e73, type: 2}
+  - {fileID: 100002, guid: 843a4083c8b9944d7950df79f59e0181, type: 2}
+  - {fileID: 100002, guid: cd223b634ddb14d038c91e53e3a25ed8, type: 2}
+  - {fileID: 100002, guid: cb8bacb1c15e0492eb994167fc5ee7b5, type: 2}
+  - {fileID: 100000, guid: 0e96f4a9c10a94470bc26ee6da5e835c, type: 2}
+  - {fileID: 100002, guid: 80761c64e6e124062b008fcba5f8751b, type: 2}
+  - {fileID: 100000, guid: d71cdc5ef02194c0999ce84bfcd992af, type: 2}
+  - {fileID: 100000, guid: 1d1bfc9bda561466182cac780a9944e3, type: 2}
+  - {fileID: 100000, guid: 2677b4aaf558c4d0992acee912561e66, type: 2}
+  - {fileID: 100000, guid: 90ddcd0ddb6ce46e19b2d885674ba6ec, type: 2}
+  - {fileID: 100000, guid: 9c194f43148f74ecc86129cd1e413efd, type: 2}
+  - {fileID: 100000, guid: 0616678848d4a48d4878c401a50d70aa, type: 2}
+  - {fileID: 100000, guid: fc7d6ee5728b64e0c8090027ec798549, type: 2}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1

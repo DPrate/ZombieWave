@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 400000}
+  - component: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: Weather
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.009099007, y: -0.005894959, z: -0.026853085}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbd0ec1ffab674475957addad40180b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particlePrefabs:
+  - {fileID: 100000, guid: 5991d41666a064f60aa53a07a142c2cd, type: 2}
+  - {fileID: 100000, guid: 81188fef8ed904153967a5ecfce46b3a, type: 2}
+  - {fileID: 100004, guid: dc0fe43b3ab0a4d7c9f9fed9571b9a9f, type: 2}
+  - {fileID: 100000, guid: f6cd7dda232d3410e830930ffb1c04a1, type: 2}
+  - {fileID: 100004, guid: 60d2d202640fa406c80a8419e7e7eb1e, type: 2}
+  - {fileID: 100000, guid: 0cef0fd62526f46829bd0754fa73286e, type: 2}
+  - {fileID: 100000, guid: 4193086cad3ee404999aa8143cec97d6, type: 2}
+  - {fileID: 100000, guid: ebd9ce21069e34121925036965757856, type: 2}
+  - {fileID: 100000, guid: cab391299224b4eb8a12972908afe2b4, type: 2}
+  - {fileID: 100000, guid: ae0e5fd21b3624fa0a38c8c5c219f7d6, type: 2}
+  - {fileID: 100000, guid: 80ebc9e7edd334593821a06f755a019d, type: 2}
+  - {fileID: 100000, guid: b45ca3da87b5c48fb901d5f190aa1691, type: 2}
+  - {fileID: 100000, guid: bdae0b39ee27c4de3876d079fb5f99b9, type: 2}
+  - {fileID: 100000, guid: 799a2925ee52844a7a2b39abd2723c5b, type: 2}
+  - {fileID: 100000, guid: 1334f191934744d6093eb600e35cd3e7, type: 2}
+  - {fileID: 100000, guid: 5af35f4e7458a49408080c8c60d8a740, type: 2}
+  - {fileID: 100000, guid: f202d400861874e16b679bc94b7dffa0, type: 2}
+  - {fileID: 100000, guid: b002d9f16742040c1ac1dec22b07d501, type: 2}
+  - {fileID: 100002, guid: 0522dce5e115b4d20b8f6027414b580b, type: 2}
+  - {fileID: 100000, guid: da03a4e0edd93bc4dbd10e24c1226589, type: 2}
+  - {fileID: 100002, guid: 1cf23ce48b9c04f1abc7b05e20b65cfb, type: 2}
+  - {fileID: 100000, guid: ec82215b5b57b43ac836c999158c1f5c, type: 2}
+  - {fileID: 100000, guid: 7210f7a6c5eed4224aa828462bc26513, type: 2}
+  - {fileID: 100000, guid: 64ddeb93c5fca464180a63c06a7a8c66, type: 2}
+  - {fileID: 100000, guid: f8825d7993bd340d8bc39d4266d7edc8, type: 2}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
